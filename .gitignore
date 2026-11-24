@@ -8,3 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+venv/
+ENV/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Vector databases & indexes (reproducible from data/pdf_files and data/text_files)
+data/vector_store/
+*.sqlite3
+*.bin
