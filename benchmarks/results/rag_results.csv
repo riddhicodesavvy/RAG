@@ -1,0 +1,7 @@
+experiment,config,recall_at_1,recall_at_3,recall_at_5,precision_at_3,mrr,mean_latency_ms,p50_latency_ms,p95_latency_ms,num_chunks,index_disk_kb,extra_metric
+B_chunking_ablation,chunk_500_ov_100,0.7889,0.8556,0.9,0.4667,0.8274,59.687,53.963,84.408,62,660.16,
+B_chunking_ablation,chunk_1000_ov_200,0.8667,0.8889,0.9,0.3,0.8806,48.698,43.184,69.723,25,604.16,
+B_chunking_ablation,chunk_1500_ov_300,0.7778,0.9,0.9,0.3037,0.8333,48.853,47.653,69.583,15,600.16,
+D_grounded_generation,llm_no_retrieval,,,,,,12228.33,,,,,ans_corr=0.0|oos_abst=0.0|unsup=0.1667
+D_grounded_generation,llm_with_rag,,,,,,29699.76,,,,,ans_corr=0.4333|oos_abst=1.0|unsup=0.0
+D_grounded_generation,llm_with_rag_and_gate,,,,,,4992.42,,,,,ans_corr=0.4333|oos_abst=1.0|unsup=0.0

@@ -1,0 +1,1347 @@
+{
+  "dataset_name": "synthetic_industrial_sop_benchmark_v1",
+  "corpus_files": [
+    "MAN-CRN-520_Overhead_Crane.txt",
+    "MAN-ELE-309_LOTO_Substation.txt",
+    "MAN-HYD-101_Hydraulic_Press.txt",
+    "MAN-THM-415_Boiler_Feedwater.txt",
+    "MAN-WLD-204_Structural_Welding_QA.txt"
+  ],
+  "total_questions": 105,
+  "category_counts": {
+    "direct_factual": 25,
+    "procedural": 20,
+    "paraphrased": 20,
+    "exact_id": 15,
+    "ambiguous": 10,
+    "out_of_scope": 15
+  },
+  "questions": [
+    {
+      "id": "Q-001",
+      "category": "direct_factual",
+      "query": "What hydraulic oil grade and temperature range are specified for the Series-4000 press?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-1",
+      "required_evidence_phrases": [
+        "ISO VG 46",
+        "38 C and 54 C"
+      ],
+      "reference_answer": "ISO VG 46 anti-wear hydraulic oil maintained between 38 C and 54 C."
+    },
+    {
+      "id": "Q-002",
+      "category": "direct_factual",
+      "query": "At what pressure does proportional relief valve PRV-402-B crack open and reach full bypass?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-1",
+      "required_evidence_phrases": [
+        "24.0 MPa",
+        "25.2 MPa"
+      ],
+      "reference_answer": "PRV-402-B cracks open at 24.0 MPa and reaches full bypass flow at 25.2 MPa."
+    },
+    {
+      "id": "Q-003",
+      "category": "direct_factual",
+      "query": "What is the maximum allowable vacuum on suction manifold gauge VG-02 during cold startup?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-2",
+      "required_evidence_phrases": [
+        "17 kPa",
+        "5 inHg"
+      ],
+      "reference_answer": "Vacuum at suction manifold gauge VG-02 must never exceed 17 kPa (5 inHg) during cold startup."
+    },
+    {
+      "id": "Q-004",
+      "category": "direct_factual",
+      "query": "What is the nominal coil resistance and minimum pull-in voltage for solenoid SOL-H88?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-4",
+      "required_evidence_phrases": [
+        "22.4 ohms",
+        "20.4 VDC"
+      ],
+      "reference_answer": "Nominal coil resistance is 22.4 ohms at 20 C, and minimum pull-in voltage under load is 20.4 VDC."
+    },
+    {
+      "id": "Q-005",
+      "category": "direct_factual",
+      "query": "At what reservoir temperature does thermal switch TS-HIGH trip the pump motor?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "68 C",
+        "K-9"
+      ],
+      "reference_answer": "Thermal switch TS-HIGH triggers an automatic pump motor trip at 68 C, engaging latching relay K-9."
+    },
+    {
+      "id": "Q-006",
+      "category": "direct_factual",
+      "query": "What bevel angle and root opening are required for ASTM A572 Grade 50 single-V groove joints?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-1",
+      "required_evidence_phrases": [
+        "30 degrees",
+        "3.0 mm"
+      ],
+      "reference_answer": "Bevel angles of 30 degrees (+5/-0 degrees) and a root opening of 3.0 mm (+/- 0.8 mm)."
+    },
+    {
+      "id": "Q-007",
+      "category": "direct_factual",
+      "query": "What temperature range must portable holding ovens maintain for E7018-H4R electrodes?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-2",
+      "required_evidence_phrases": [
+        "120 C and 150 C",
+        "E7018-H4R"
+      ],
+      "reference_answer": "Portable holding ovens must maintain E7018-H4R electrodes between 120 C and 150 C."
+    },
+    {
+      "id": "Q-008",
+      "category": "direct_factual",
+      "query": "What is the minimum preheat temperature for ASTM A572 Grade 50 plates over 38 mm thick?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-3",
+      "required_evidence_phrases": [
+        "110 C",
+        "38 mm"
+      ],
+      "reference_answer": "Minimum preheat temperature increases to 110 C for thicknesses exceeding 38 mm."
+    },
+    {
+      "id": "Q-009",
+      "category": "direct_factual",
+      "query": "What maximum oxygen concentration is allowed inside TP316L pipe bores before GTAW welding?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-4",
+      "required_evidence_phrases": [
+        "0.05%",
+        "500 ppm"
+      ],
+      "reference_answer": "Residual O2 concentration must be below 0.05% (500 ppm) before starting GTAW welding."
+    },
+    {
+      "id": "Q-010",
+      "category": "direct_factual",
+      "query": "How long must butt welds be held after cooling before ultrasonic testing under UT-SCAN-9?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-5",
+      "required_evidence_phrases": [
+        "24 hours",
+        "UT-SCAN-9"
+      ],
+      "reference_answer": "Welds must cool below 40 C and be held for 24 hours before UT-SCAN-9 inspection."
+    },
+    {
+      "id": "Q-011",
+      "category": "direct_factual",
+      "query": "What is the calculated incident energy and Arc Flash PPE Category for switchgear panel SWG-BUS-A?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-2",
+      "required_evidence_phrases": [
+        "14.8 cal/cm2",
+        "Category 3"
+      ],
+      "reference_answer": "14.8 cal/cm2 at 450 mm working distance, placing SWG-BUS-A in Arc Flash PPE Category 3."
+    },
+    {
+      "id": "Q-012",
+      "category": "direct_factual",
+      "query": "How often must CLASS-2-17KV rubber insulating gloves undergo laboratory electrical re-certification?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-3",
+      "required_evidence_phrases": [
+        "6 months",
+        "180 days"
+      ],
+      "reference_answer": "Dielectric gloves must be re-certified every 6 months (withdrawn if >180 days from test date)."
+    },
+    {
+      "id": "Q-013",
+      "category": "direct_factual",
+      "query": "What acetylene concentration in transformer TRF-5M indicates active internal arcing?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-4",
+      "required_evidence_phrases": [
+        "35 ppm",
+        "C2H2"
+      ],
+      "reference_answer": "Acetylene (C2H2) concentrations rising above 35 ppm signify active internal high-energy arcing."
+    },
+    {
+      "id": "Q-014",
+      "category": "direct_factual",
+      "query": "What is the float charge voltage and cell count for the substation 110 VDC battery bank?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-5",
+      "required_evidence_phrases": [
+        "55 lead-acid",
+        "124.85 VDC"
+      ],
+      "reference_answer": "55 lead-acid VRLA cells maintained at a float charge voltage of 124.85 VDC (+/- 0.5%)."
+    },
+    {
+      "id": "Q-015",
+      "category": "direct_factual",
+      "query": "What torque must be applied to inter-cell copper busbars using insulated 1000 V wrenches?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-5",
+      "required_evidence_phrases": [
+        "14 Nm",
+        "1000 V"
+      ],
+      "reference_answer": "Torque wrenches must be set to 14 Nm on inter-cell copper busbars."
+    },
+    {
+      "id": "Q-016",
+      "category": "direct_factual",
+      "query": "What is the maximum allowable dissolved oxygen leaving deaerator DA-01 for boiler BLR-80T?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-1",
+      "required_evidence_phrases": [
+        "7 ppb",
+        "0.007 mg/L"
+      ],
+      "reference_answer": "Dissolved oxygen leaving DA-01 must remain strictly below 7 ppb (0.007 mg/L)."
+    },
+    {
+      "id": "Q-017",
+      "category": "direct_factual",
+      "query": "What drum water pH and maximum silica limits apply at 4.2 MPa?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-2",
+      "required_evidence_phrases": [
+        "9.2 to 9.8",
+        "2.5 ppm"
+      ],
+      "reference_answer": "Drum water pH must stay between 9.2 and 9.8, and total drum silica must remain below 2.5 ppm."
+    },
+    {
+      "id": "Q-018",
+      "category": "direct_factual",
+      "query": "What deposit weight density triggers chemical acid cleaning of boiler tubes?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-4",
+      "required_evidence_phrases": [
+        "150 g/m2",
+        "5% hydrochloric"
+      ],
+      "reference_answer": "Acid cleaning is triggered when waterside deposit density exceeds 150 g/m2."
+    },
+    {
+      "id": "Q-019",
+      "category": "direct_factual",
+      "query": "At what drum level drop does LWCO-01 initiate a Master Fuel Trip?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-5",
+      "required_evidence_phrases": [
+        "-125 mm",
+        "1.2 seconds"
+      ],
+      "reference_answer": "Dropping below -125 mm initiates an immediate Master Fuel Trip, closing DBB-1/2 within 1.2 seconds."
+    },
+    {
+      "id": "Q-020",
+      "category": "direct_factual",
+      "query": "What is the normal operating drum TDS limit controlled by continuous blowdown valve CBD-09?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-3",
+      "required_evidence_phrases": [
+        "800 ppm",
+        "CBD-09"
+      ],
+      "reference_answer": "Drum total dissolved solids (TDS) are controlled below 800 ppm."
+    },
+    {
+      "id": "Q-021",
+      "category": "direct_factual",
+      "query": "What are the Safe Working Load ratings for main hoist MH-01 and auxiliary hoist AH-02?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-1",
+      "required_evidence_phrases": [
+        "25.0 metric tonnes",
+        "5.0 metric tonnes"
+      ],
+      "reference_answer": "25.0 metric tonnes on main hoist MH-01 and 5.0 metric tonnes on auxiliary hoist AH-02."
+    },
+    {
+      "id": "Q-022",
+      "category": "direct_factual",
+      "query": "What proof test load weight and hold duration are required for annual crane certification?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-1",
+      "required_evidence_phrases": [
+        "31.25 tonnes",
+        "10 minutes"
+      ],
+      "reference_answer": "A calibrated test weight of 31.25 tonnes (125% SWL) held for 10 minutes."
+    },
+    {
+      "id": "Q-023",
+      "category": "direct_factual",
+      "query": "What minimum wire diameter requires immediate discard of the 18 mm hoist wire rope?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-2",
+      "required_evidence_phrases": [
+        "16.74 mm",
+        "7%"
+      ],
+      "reference_answer": "Outer wire diameter reduction exceeding 7% (measured below 16.74 mm) mandates replacement."
+    },
+    {
+      "id": "Q-024",
+      "category": "direct_factual",
+      "query": "At what wind speed does anemometer ANEM-01 automatically inhibit crane motion?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-4",
+      "required_evidence_phrases": [
+        "20.0 m/s",
+        "72 km/h"
+      ],
+      "reference_answer": "At 20.0 m/s (72 km/h), crane motion is automatically inhibited."
+    },
+    {
+      "id": "Q-025",
+      "category": "direct_factual",
+      "query": "What heights below the trolley frame are limit switches HLS-01 and HLS-02 positioned?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-5",
+      "required_evidence_phrases": [
+        "450 mm",
+        "200 mm"
+      ],
+      "reference_answer": "Primary switch HLS-01 is set 450 mm below the trolley frame and secondary HLS-02 at 200 mm."
+    },
+    {
+      "id": "Q-026",
+      "category": "procedural",
+      "query": "What steps must be taken before removing proportional directional valve PDV-118?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-3",
+      "required_evidence_phrases": [
+        "NBV-03",
+        "25 minutes",
+        "68 Nm"
+      ],
+      "reference_answer": "Depressurize ACC-04 via NBV-03 three turns, confirm zero on PG-MAIN, flush 25 min, torque M10 bolts to 34 then 68 Nm."
+    },
+    {
+      "id": "Q-027",
+      "category": "procedural",
+      "query": "How should an operator torque the four M10 mounting bolts on valve PDV-118?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-3",
+      "required_evidence_phrases": [
+        "diagonal cross pattern",
+        "34 Nm",
+        "68 Nm"
+      ],
+      "reference_answer": "Torque in a diagonal cross pattern in two stages: first stage 34 Nm, final stage 68 Nm."
+    },
+    {
+      "id": "Q-028",
+      "category": "procedural",
+      "query": "What is the recovery procedure after thermal switch TS-HIGH trips the hydraulic pump?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "52 C",
+        "28 liters/min",
+        "PB-RST-4"
+      ],
+      "reference_answer": "Allow fluid to cool below 52 C, verify HEX-02 water flow >= 28 L/min, and press reset PB-RST-4."
+    },
+    {
+      "id": "Q-029",
+      "category": "procedural",
+      "query": "How do you manually lower the upper platen if power fails?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "OVR-77",
+        "6 mm hex key"
+      ],
+      "reference_answer": "Turn override screw OVR-77 clockwise using a 6 mm hex key while maintaining visual clearance."
+    },
+    {
+      "id": "Q-030",
+      "category": "procedural",
+      "query": "How should E7018-H4R electrodes be handled if exposed to >60% workshop humidity for 5 hours?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-2",
+      "required_evidence_phrases": [
+        "rebaked once only",
+        "370 C for 2.0 hours"
+      ],
+      "reference_answer": "Segregate and rebake once only at 370 C for 2.0 hours (or discard if flux is wet/flaking)."
+    },
+    {
+      "id": "Q-031",
+      "category": "procedural",
+      "query": "What surface cleaning steps are required before tack welding ASTM A572 Grade 50 steel?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-1",
+      "required_evidence_phrases": [
+        "50 mm",
+        "wire brushing"
+      ],
+      "reference_answer": "Remove mill scale, grease, paint, and moisture within 50 mm of the weld toe via power brushing or grinding."
+    },
+    {
+      "id": "Q-032",
+      "category": "procedural",
+      "query": "What steps are required to repair a weld exhibiting slag inclusions longer than 12 mm?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-5",
+      "required_evidence_phrases": [
+        "excavation",
+        "WPS-REP-02",
+        "100% re-inspection"
+      ],
+      "reference_answer": "Full excavation, re-welding under repair spec WPS-REP-02, and 100% ultrasonic re-inspection."
+    },
+    {
+      "id": "Q-033",
+      "category": "procedural",
+      "query": "How should stainless steel pipe interiors be purged before GTAW root welding?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-4",
+      "required_evidence_phrases": [
+        "PDK-60",
+        "OA-900",
+        "0.05%"
+      ],
+      "reference_answer": "Back-purge with argon using Purge Dam Kit PDK-60 until analyzer OA-900 reads below 0.05% O2."
+    },
+    {
+      "id": "Q-034",
+      "category": "procedural",
+      "query": "List the seven-step Zero Energy Verification sequence LOTO-77X for 11 kV switchgear.",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-1",
+      "required_evidence_phrases": [
+        "VCB-11K",
+        "Live-Dead-Live",
+        "ES-11K",
+        "PEC-04"
+      ],
+      "reference_answer": "Notify operator, open downstream feeders, rack out VCB-11K, apply LOTO-PAD, Live-Dead-Live test with HV-DET-15KV, close ES-11K, attach PEC-04."
+    },
+    {
+      "id": "Q-035",
+      "category": "procedural",
+      "query": "What daily shift check is mandatory before wearing CLASS-2-17KV dielectric gloves?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-3",
+      "required_evidence_phrases": [
+        "air-inflation roll test",
+        "GLV-STAMP"
+      ],
+      "reference_answer": "Perform a manual air-inflation roll test for pinholes/cracking and verify cuff tag GLV-STAMP is within 180 days."
+    },
+    {
+      "id": "Q-036",
+      "category": "procedural",
+      "query": "What diagnostic actions are required if transformer TRF-5M DGA shows >35 ppm acetylene?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-4",
+      "required_evidence_phrases": [
+        "SFRA-200",
+        "winding resistance"
+      ],
+      "reference_answer": "Take transformer offline and perform winding resistance and sweep frequency response analysis (SFRA-200)."
+    },
+    {
+      "id": "Q-037",
+      "category": "procedural",
+      "query": "What test is triggered when a VRLA battery cell's impedance rises >25% above baseline?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-5",
+      "required_evidence_phrases": [
+        "C/10 rate",
+        "11 A"
+      ],
+      "reference_answer": "Conduct single-cell capacity discharge testing at C/10 rate (11 A)."
+    },
+    {
+      "id": "Q-038",
+      "category": "procedural",
+      "query": "What is the exact opening and closing valve sequence for manual mud-drum blowdown?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-3",
+      "required_evidence_phrases": [
+        "BDV-12B",
+        "BDV-12A",
+        "12 seconds"
+      ],
+      "reference_answer": "Open slow-closing BDV-12B first, open BDV-12A for 12 seconds, close BDV-12A first, then close BDV-12B last."
+    },
+    {
+      "id": "Q-039",
+      "category": "procedural",
+      "query": "How are boiler tubes passivated after hydrochloric acid cleaning?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-4",
+      "required_evidence_phrases": [
+        "citric acid",
+        "sodium nitrite",
+        "6.3 MPa"
+      ],
+      "reference_answer": "Neutralize with citric acid, passivate using sodium nitrite/ammonia at pH 9.5 for 6 hours, then hydrotest at 6.3 MPa."
+    },
+    {
+      "id": "Q-040",
+      "category": "procedural",
+      "query": "How is oxygen scavenged in the feedwater downstream of deaerator DA-01?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-1",
+      "required_evidence_phrases": [
+        "carbohydrazide",
+        "50 to 100 ppb"
+      ],
+      "reference_answer": "Continuously meter catalyzed carbohydrazide solution SCAV-CHZ-10 to target 50-100 ppb residual at the economizer inlet."
+    },
+    {
+      "id": "Q-041",
+      "category": "procedural",
+      "query": "What daily shift check is mandatory for low-water level cutoff probes LWCO-01 and LWCO-02?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-5",
+      "required_evidence_phrases": [
+        "probe blowdown",
+        "logged once per shift"
+      ],
+      "reference_answer": "Perform and log probe blowdown verification once per shift without bypassing LWCO-01."
+    },
+    {
+      "id": "Q-042",
+      "category": "procedural",
+      "query": "What actions must the crane operator take when sustained wind speed reaches 20.0 m/s?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-4",
+      "required_evidence_phrases": [
+        "SP-01",
+        "RC-A/B",
+        "2.0 m"
+      ],
+      "reference_answer": "Move bridge to storm parking bay SP-01, engage rail clamps RC-A/B, and lower unloaded hook to 2.0 m above ground."
+    },
+    {
+      "id": "Q-043",
+      "category": "procedural",
+      "query": "What pre-shift test must be executed before lifting any payload with CRN-BAY3?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-5",
+      "required_evidence_phrases": [
+        "unloaded functional bump test",
+        "HLS-01"
+      ],
+      "reference_answer": "Perform an unloaded functional bump test of upper hoist limit switch HLS-01."
+    },
+    {
+      "id": "Q-044",
+      "category": "procedural",
+      "query": "What is required to legally rig a load using sling angles below 30 degrees to the horizontal?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-3",
+      "required_evidence_phrases": [
+        "spreader beam SB-15T",
+        "rigging engineer"
+      ],
+      "reference_answer": "Strictly prohibited without an engineered spreader beam SB-15T approved by the site rigging engineer."
+    },
+    {
+      "id": "Q-045",
+      "category": "procedural",
+      "query": "How is structural girder deflection evaluated during the annual 31.25-tonne crane proof test?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-1",
+      "required_evidence_phrases": [
+        "L/800",
+        "22.5 mm"
+      ],
+      "reference_answer": "Mid-span deflection must remain below L/800 (22.5 mm for the 18-meter span) with zero brake creep."
+    },
+    {
+      "id": "Q-046",
+      "category": "paraphrased",
+      "query": "Why would a hydraulic press make loud metallic banging noises and move jerkily?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-2",
+      "required_evidence_phrases": [
+        "cavitation",
+        "STR-14",
+        "HOSE-IN-09"
+      ],
+      "reference_answer": "Pump cavitation caused by clogged strainer STR-14, collapsed hose HOSE-IN-09, low oil (<185 L), or air ingress via SSR-22."
+    },
+    {
+      "id": "Q-047",
+      "category": "paraphrased",
+      "query": "How do I release stored hydraulic energy safely before unbolting a control valve?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-3",
+      "required_evidence_phrases": [
+        "ACC-04",
+        "NBV-03",
+        "PG-MAIN"
+      ],
+      "reference_answer": "Bleed accumulator ACC-04 by opening needle valve NBV-03 three turns until gauge PG-MAIN reads zero."
+    },
+    {
+      "id": "Q-048",
+      "category": "paraphrased",
+      "query": "My 24V directional actuator won't shift; what electrical resistance indicates a burnt-out or shorted coil?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-4",
+      "required_evidence_phrases": [
+        "18.0 ohms",
+        "30.0 ohms"
+      ],
+      "reference_answer": "Below 18.0 ohms indicates an inter-turn short; above 30.0 ohms or infinite resistance indicates an open winding."
+    },
+    {
+      "id": "Q-049",
+      "category": "paraphrased",
+      "query": "What keeps the heavy upper press head from falling down if the electricity goes out?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "counterbalance valve CBV-77",
+        "mechanically"
+      ],
+      "reference_answer": "Counterbalance valve CBV-77 mechanically locks the upper platen during power loss."
+    },
+    {
+      "id": "Q-050",
+      "category": "paraphrased",
+      "query": "How do I keep stainless steel inside pipes from turning crusty and oxidized during TIG welding?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-4",
+      "required_evidence_phrases": [
+        "back-purging",
+        "0.05%",
+        "14 to 18 L/min"
+      ],
+      "reference_answer": "Use argon back-purging below 0.05% O2 and keep torch argon flow between 14 and 18 L/min to avoid turbulence."
+    },
+    {
+      "id": "Q-051",
+      "category": "paraphrased",
+      "query": "Why can't we weld fast and hot without waiting between passes on thick structural steel?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-3",
+      "required_evidence_phrases": [
+        "230 C",
+        "Charpy V-notch"
+      ],
+      "reference_answer": "Exceeding 230 C interpass temperature degrades heat-affected zone Charpy impact toughness."
+    },
+    {
+      "id": "Q-052",
+      "category": "paraphrased",
+      "query": "What happens if low-hydrogen stick welding rods sit out on a humid workshop bench all day?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-2",
+      "required_evidence_phrases": [
+        "4.0 hours",
+        "370 C"
+      ],
+      "reference_answer": "Exposure over 4.0 hours above 60% RH requires single-time rebaking at 370 C for 2 hours or rejection if flux flakes."
+    },
+    {
+      "id": "Q-053",
+      "category": "paraphrased",
+      "query": "Why do inspectors wait a whole day after welding cools before running sound-wave flaw checks?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-5",
+      "required_evidence_phrases": [
+        "24 hours",
+        "hydrogen-delayed cracking"
+      ],
+      "reference_answer": "The 24-hour hold accounts for the hydrogen-delayed cracking incubation period prior to UT-SCAN-9."
+    },
+    {
+      "id": "Q-054",
+      "category": "paraphrased",
+      "query": "Why are technicians banned from wearing polyester or nylon t-shirts under high-voltage flash suits?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-2",
+      "required_evidence_phrases": [
+        "Synthetic melting fabrics",
+        "prohibited"
+      ],
+      "reference_answer": "Synthetic fabrics like polyester and nylon can melt onto skin under arc-rated garments during an arc flash."
+    },
+    {
+      "id": "Q-055",
+      "category": "paraphrased",
+      "query": "How do electricians prove a high-voltage circuit is truly dead before touching busbars?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-1",
+      "required_evidence_phrases": [
+        "Live-Dead-Live",
+        "HV-DET-15KV"
+      ],
+      "reference_answer": "Perform a Live-Dead-Live test using calibrated live-line tester HV-DET-15KV before closing the earthing switch."
+    },
+    {
+      "id": "Q-056",
+      "category": "paraphrased",
+      "query": "Which gas found in transformer oil tells us electrical sparks are jumping inside the tank?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-4",
+      "required_evidence_phrases": [
+        "Acetylene",
+        "35 ppm"
+      ],
+      "reference_answer": "Acetylene (C2H2) above 35 ppm indicates active internal high-energy arcing."
+    },
+    {
+      "id": "Q-057",
+      "category": "paraphrased",
+      "query": "Why must we check the date inked on rubber electrical gloves even if they look clean?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-3",
+      "required_evidence_phrases": [
+        "180 days",
+        "6 months"
+      ],
+      "reference_answer": "Dielectric gloves must be lab-recertified every 6 months; pairs >180 days past stamp must be withdrawn."
+    },
+    {
+      "id": "Q-058",
+      "category": "paraphrased",
+      "query": "What chemical damage occurs on steam turbine blades if boiler silica concentrations climb too high?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-2",
+      "required_evidence_phrases": [
+        "volatile silica carryover",
+        "glass-like deposition"
+      ],
+      "reference_answer": "Volatile silica carryover causes glass-like deposition on downstream steam turbine blades."
+    },
+    {
+      "id": "Q-059",
+      "category": "paraphrased",
+      "query": "Why do we open the slow blowdown valve before the fast valve, and close it last?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-3",
+      "required_evidence_phrases": [
+        "seat wear",
+        "sacrificial valve"
+      ],
+      "reference_answer": "Cycling BDV-12A inside open BDV-12B concentrates throttling and seat wear onto the outer sacrificial valve."
+    },
+    {
+      "id": "Q-060",
+      "category": "paraphrased",
+      "query": "How do engineers detect if cooling water is leaking into the pure steam condenser?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-2",
+      "required_evidence_phrases": [
+        "Cation conductivity",
+        "0.50 uS/cm"
+      ],
+      "reference_answer": "Cation conductivity at sample point SS-03 spiking above 0.50 uS/cm indicates condenser tube leakage."
+    },
+    {
+      "id": "Q-061",
+      "category": "paraphrased",
+      "query": "What protective iron oxide layer are we trying to grow inside freshly acid-washed boiler tubes?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-4",
+      "required_evidence_phrases": [
+        "magnetite",
+        "Fe3O4"
+      ],
+      "reference_answer": "Passivation with sodium nitrite/ammonia establishes a protective magnetite (Fe3O4) film."
+    },
+    {
+      "id": "Q-062",
+      "category": "paraphrased",
+      "query": "How much extra force hits each lifting sling leg when riggers lift with a shallow 30-degree bridle?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-3",
+      "required_evidence_phrases": [
+        "2.000",
+        "30 degrees"
+      ],
+      "reference_answer": "At 30 degrees to horizontal, the tension multiplier doubles to 2.000, requiring spreader beam SB-15T."
+    },
+    {
+      "id": "Q-063",
+      "category": "paraphrased",
+      "query": "How many snapped strands or wires force us to throw away a crane hoist cable?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-2",
+      "required_evidence_phrases": [
+        "6 or more",
+        "3 or more"
+      ],
+      "reference_answer": "6+ broken wires in one lay (115 mm) or 3+ broken wires in a single strand within one lay."
+    },
+    {
+      "id": "Q-064",
+      "category": "paraphrased",
+      "query": "What keeps the crane hook from slamming upward into the overhead trolley drum?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-5",
+      "required_evidence_phrases": [
+        "HLS-01",
+        "HLS-02"
+      ],
+      "reference_answer": "Primary rotary cam switch HLS-01 (450 mm below trolley) and secondary counterweight switch HLS-02 (200 mm below)."
+    },
+    {
+      "id": "Q-065",
+      "category": "paraphrased",
+      "query": "When gusty weather starts picking up outside, at what speed do we get an early warning versus total shutdown?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-4",
+      "required_evidence_phrases": [
+        "15.0 m/s",
+        "20.0 m/s"
+      ],
+      "reference_answer": "Amber warning beacon flashes at 15.0 m/s (54 km/h); automatic motion inhibit occurs at 20.0 m/s (72 km/h)."
+    },
+    {
+      "id": "Q-066",
+      "category": "exact_id",
+      "query": "What is the part specification and role of SSR-22?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-2",
+      "required_evidence_phrases": [
+        "SSR-22",
+        "shaft seal ring"
+      ],
+      "reference_answer": "SSR-22 is the shaft seal ring inspected for air ingress during persistent cavitation."
+    },
+    {
+      "id": "Q-067",
+      "category": "exact_id",
+      "query": "Explain the function of D-41 and PB-RST-4 in MAN-HYD-101.",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-4",
+      "required_evidence_phrases": [
+        "D-41",
+        "flyback suppression diode"
+      ],
+      "reference_answer": "D-41 is the flyback suppression diode on SOL-H88 terminals; PB-RST-4 resets thermal trip relay K-9."
+    },
+    {
+      "id": "Q-068",
+      "category": "exact_id",
+      "query": "Where is test port TP-01 used and what gauge accuracy is required?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-1",
+      "required_evidence_phrases": [
+        "TP-01",
+        "Class-0.5"
+      ],
+      "reference_answer": "TP-01 is used to verify pressure with a Class-0.5 calibrated digital gauge before adjusting PRV-402-B."
+    },
+    {
+      "id": "Q-069",
+      "category": "exact_id",
+      "query": "What is scrap bin BIN-RED-03 designated for in MAN-WLD-204?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-2",
+      "required_evidence_phrases": [
+        "BIN-RED-03",
+        "Wet or flaking flux"
+      ],
+      "reference_answer": "BIN-RED-03 receives rejected electrodes with wet or flaking flux coatings."
+    },
+    {
+      "id": "Q-070",
+      "category": "exact_id",
+      "query": "What equipment is specified as TC-08 and OA-900?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-3",
+      "required_evidence_phrases": [
+        "TC-08",
+        "thermocouple"
+      ],
+      "reference_answer": "TC-08 is a calibrated contact thermocouple for preheat measurement; OA-900 is the oxygen analyzer for GTAW purging."
+    },
+    {
+      "id": "Q-071",
+      "category": "exact_id",
+      "query": "What transducer frequency and angle are required by UT-SCAN-9?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-5",
+      "required_evidence_phrases": [
+        "2.25 MHz",
+        "60-degree"
+      ],
+      "reference_answer": "UT-SCAN-9 uses a 2.25 MHz, 60-degree shear-wave transducer."
+    },
+    {
+      "id": "Q-072",
+      "category": "exact_id",
+      "query": "What are the model and rating of VRLA-110-AH cells?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-5",
+      "required_evidence_phrases": [
+        "VRLA-110-AH",
+        "2.15 mOhm"
+      ],
+      "reference_answer": "55 lead-acid VRLA-110-AH cells with installation impedance baseline of 2.15 mOhm."
+    },
+    {
+      "id": "Q-073",
+      "category": "exact_id",
+      "query": "What components are PEC-04 and DV-01 in MAN-ELE-309?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-1",
+      "required_evidence_phrases": [
+        "PEC-04",
+        "portable earthing cluster"
+      ],
+      "reference_answer": "PEC-04 is the portable earthing cluster attached in step 7 of LOTO-77X; DV-01 is transformer TRF-5M's DGA drain valve."
+    },
+    {
+      "id": "Q-074",
+      "category": "exact_id",
+      "query": "What proof test voltage applies to CLASS-2-17KV gloves under ASTM D120?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-3",
+      "required_evidence_phrases": [
+        "20,000 V",
+        "17,000 V"
+      ],
+      "reference_answer": "CLASS-2-17KV gloves are rated for 17,000 V AC max working voltage and tested at 20,000 V proof voltage."
+    },
+    {
+      "id": "Q-075",
+      "category": "exact_id",
+      "query": "What chemical is dosed as SCAV-CHZ-10?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-1",
+      "required_evidence_phrases": [
+        "SCAV-CHZ-10",
+        "carbohydrazide"
+      ],
+      "reference_answer": "SCAV-CHZ-10 is catalyzed carbohydrazide solution dosed into the deaerator storage drop-leg."
+    },
+    {
+      "id": "Q-076",
+      "category": "exact_id",
+      "query": "What instruments are CT-401 and DPT-301?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-3",
+      "required_evidence_phrases": [
+        "CT-401",
+        "conductivity transmitter"
+      ],
+      "reference_answer": "CT-401 is the conductivity transmitter modulating CBD-09; DPT-301 is the drum level differential pressure transmitter."
+    },
+    {
+      "id": "Q-077",
+      "category": "exact_id",
+      "query": "What are DBB-1/2 and how quickly must they close on trip?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-5",
+      "required_evidence_phrases": [
+        "DBB-1/2",
+        "1.2 seconds"
+      ],
+      "reference_answer": "DBB-1/2 are natural gas double-block-and-bleed valves closing within 1.2 seconds of a Master Fuel Trip."
+    },
+    {
+      "id": "Q-078",
+      "category": "exact_id",
+      "query": "What is the wire rope construction and lay length of main hoist MH-01?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-2",
+      "required_evidence_phrases": [
+        "6x36 IWRC",
+        "115 mm"
+      ],
+      "reference_answer": "18 mm diameter 6x36 IWRC galvanized wire rope with a rope lay length of 115 mm."
+    },
+    {
+      "id": "Q-079",
+      "category": "exact_id",
+      "query": "What are SP-01 and RC-A/B used for in MAN-CRN-520?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-4",
+      "required_evidence_phrases": [
+        "SP-01",
+        "RC-A/B"
+      ],
+      "reference_answer": "SP-01 is the storm parking bay and RC-A/B are the rail clamps engaged during 20.0 m/s wind shutdown."
+    },
+    {
+      "id": "Q-080",
+      "category": "exact_id",
+      "query": "When is spreader beam SB-15T required?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-3",
+      "required_evidence_phrases": [
+        "SB-15T",
+        "30 degrees"
+      ],
+      "reference_answer": "SB-15T is required when rigging angles fall below 30 degrees to the horizontal."
+    },
+    {
+      "id": "Q-081",
+      "category": "ambiguous",
+      "query": "What pressure limit applies?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-1",
+      "required_evidence_phrases": [
+        "21.5 MPa",
+        "24.0 MPa"
+      ],
+      "reference_answer": "Ambiguous across press (21.5 MPa working / 24.0 MPa relief) and boiler (4.2 MPa working / 6.3 MPa hydrotest)."
+    },
+    {
+      "id": "Q-082",
+      "category": "ambiguous",
+      "query": "What is the required torque specification?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-3",
+      "required_evidence_phrases": [
+        "68 Nm"
+      ],
+      "reference_answer": "Depends on component: PDV-118 valve bolts require 68 Nm; substation battery busbars require 14 Nm."
+    },
+    {
+      "id": "Q-083",
+      "category": "ambiguous",
+      "query": "How long should we wait before performing the inspection?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-5",
+      "required_evidence_phrases": [
+        "24 hours"
+      ],
+      "reference_answer": "Weld UT inspection requires a 24-hour delay; crane proof load test requires a 10-minute hold; glove lab recert is 6 months."
+    },
+    {
+      "id": "Q-084",
+      "category": "ambiguous",
+      "query": "What temperature threshold triggers a shutdown or trip?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "68 C"
+      ],
+      "reference_answer": "Hydraulic press thermal trip triggers at 68 C; welding maximum interpass is 230 C; transformer overheating flag at 500 C."
+    },
+    {
+      "id": "Q-085",
+      "category": "ambiguous",
+      "query": "What is the maximum allowed ppm limit?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-WLD-204_Structural_Welding_QA.txt",
+      "ground_truth_section": "SEC-WLD-4",
+      "required_evidence_phrases": [
+        "500 ppm"
+      ],
+      "reference_answer": "Depends on context: GTAW purge O2 <= 500 ppm; DGA C2H2 <= 35 ppm; drum silica <= 2.5 ppm; drum TDS <= 800 ppm."
+    },
+    {
+      "id": "Q-086",
+      "category": "ambiguous",
+      "query": "Which valve needs to be opened first?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-THM-415_Boiler_Feedwater.txt",
+      "ground_truth_section": "SEC-THM-3",
+      "required_evidence_phrases": [
+        "BDV-12B"
+      ],
+      "reference_answer": "During mud-drum blowdown, open slow-closing BDV-12B first; for accumulator bleed, open NBV-03."
+    },
+    {
+      "id": "Q-087",
+      "category": "ambiguous",
+      "query": "What PPE is required for this task?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-2",
+      "required_evidence_phrases": [
+        "Category 3",
+        "AR-25"
+      ],
+      "reference_answer": "Substation switchgear SWG-BUS-A mandates Category 3 (AR-25 suit, Class-2 shield, leather protectors)."
+    },
+    {
+      "id": "Q-088",
+      "category": "ambiguous",
+      "query": "What is the voltage rating mentioned in the manual?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-ELE-309_LOTO_Substation.txt",
+      "ground_truth_section": "SEC-ELE-1",
+      "required_evidence_phrases": [
+        "11 kV"
+      ],
+      "reference_answer": "Switchgear is 11 kV; dielectric gloves rated 17 kV; DC battery bank is 110 VDC (float 124.85 VDC); solenoid is 24 VDC."
+    },
+    {
+      "id": "Q-089",
+      "category": "ambiguous",
+      "query": "When do we replace the component?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-CRN-520_Overhead_Crane.txt",
+      "ground_truth_section": "SEC-CRN-2",
+      "required_evidence_phrases": [
+        "16.74 mm",
+        "6 or more"
+      ],
+      "reference_answer": "Hoist wire rope is discarded at 6+ broken wires in one lay or <16.74 mm diameter; gloves retired past 180 days."
+    },
+    {
+      "id": "Q-090",
+      "category": "ambiguous",
+      "query": "What flow rate should be checked?",
+      "answerable": true,
+      "ground_truth_doc": "MAN-HYD-101_Hydraulic_Press.txt",
+      "ground_truth_section": "SEC-HYD-5",
+      "required_evidence_phrases": [
+        "28 liters/min"
+      ],
+      "reference_answer": "Heat exchanger HEX-02 water flow >= 28 L/min; GTAW shielding argon flow 14-18 L/min."
+    },
+    {
+      "id": "Q-091",
+      "category": "out_of_scope",
+      "query": "How do I configure Kubernetes horizontal pod autoscaling for a microservice?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-092",
+      "category": "out_of_scope",
+      "query": "What is the corporate employee reimbursement policy for domestic flight tickets?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-093",
+      "category": "out_of_scope",
+      "query": "How do React useEffect hooks avoid infinite re-rendering loops?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-094",
+      "category": "out_of_scope",
+      "query": "What was the quarterly revenue growth of Bridge & Roof Co. in FY 2024?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-095",
+      "category": "out_of_scope",
+      "query": "Which chemotherapy dosage applies to stage-3 non-small-cell lung cancer?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-096",
+      "category": "out_of_scope",
+      "query": "How do you configure PostgreSQL Row-Level Security policies for multi-tenant tables?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-097",
+      "category": "out_of_scope",
+      "query": "What are the ingredients and baking time for sourdough focaccia bread?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-098",
+      "category": "out_of_scope",
+      "query": "How do I initialize a ChromaDB vector collection in Python?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-099",
+      "category": "out_of_scope",
+      "query": "What is the optimal learning rate schedule for fine-tuning Llama-3-8B with LoRA?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-100",
+      "category": "out_of_scope",
+      "query": "Which visa documentation is required for a University of Toronto study permit?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-101",
+      "category": "out_of_scope",
+      "query": "How do you calculate the Black-Scholes option pricing delta for European calls?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-102",
+      "category": "out_of_scope",
+      "query": "What torque applies to a Toyota Corolla cylinder head bolt?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-103",
+      "category": "out_of_scope",
+      "query": "How are municipal property taxes assessed in Chennai metropolitan wards?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-104",
+      "category": "out_of_scope",
+      "query": "What is the exact chemical formula of aspirin and its synthesis yield?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    },
+    {
+      "id": "Q-105",
+      "category": "out_of_scope",
+      "query": "How do you configure BGP peering routes on a Cisco IOS XR router?",
+      "answerable": false,
+      "ground_truth_doc": null,
+      "ground_truth_section": null,
+      "required_evidence_phrases": [],
+      "reference_answer": "INSUFFICIENT_CONTEXT: The provided technical manuals do not contain information to answer this question."
+    }
+  ]
+}

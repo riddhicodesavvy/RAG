@@ -1,0 +1,16 @@
+# INDUSTRIAL WATER-TUBE BOILER FEEDWATER CHEMISTRY MANUAL (DOC-ID: MAN-THM-415)
+
+[SEC-THM-1] Deaerator & Dissolved Oxygen Scavenging
+Steam boiler BLR-80T operates at 4.2 MPa drum pressure (saturation temperature 253 C). Feedwater leaving thermal deaerator DA-01 must maintain dissolved oxygen (DO) strictly below 7 ppb (0.007 mg/L) to arrest pitting corrosion in economizer tubes. Residual oxygen is scavenged chemically via continuous metered dosing of catalyzed carbohydrazide solution (SCAV-CHZ-10) into the deaerator storage drop-leg, targeting a residual carbohydrazide concentration of 50 to 100 ppb at the boiler economizer inlet.
+
+[SEC-THM-2] Drum Water pH, Phosphate & Silica Limits
+Boiler drum water pH must be maintained within 9.2 to 9.8 using coordinated tri-sodium phosphate (Na3PO4) dosing to eliminate caustic gouging and acid phosphate corrosion. Total drum silica (SiO2) must remain below 2.5 ppm at 4.2 MPa to prevent volatile silica carryover and glass-like deposition on downstream steam turbine blades. Cation conductivity of saturated steam sample point SS-03 must stay below 0.20 uS/cm; spikes above 0.50 uS/cm indicate condenser tube leakage.
+
+[SEC-THM-3] Continuous & Intermittent Blowdown Sequencing (BDV-12A)
+Drum total dissolved solids (TDS) are controlled below 800 ppm via automated continuous blowdown valve CBD-09 modulated by conductivity transmitter CT-401. Manual bottom mud-drum blowdown uses quick-opening/slow-closing tandem valves BDV-12A and BDV-12B every 8-hour shift for strictly 12 seconds duration. Sequence rule: open slow-closing valve BDV-12B fully first, cycle quick-opening valve BDV-12A open for 12 seconds, close BDV-12A first, then close BDV-12B last to absorb seat wear on the outer sacrificial valve.
+
+[SEC-THM-4] Acid Cleaning & Passivation Criteria
+Internal boiler tube chemical cleaning (inhibited 5% hydrochloric acid at 65 C) is triggered when waterside deposit weight density measured on crown-side tube samples exceeds 150 g/m2. Following acid flush and citric acid neutralization, tubes are passivated using a sodium nitrite / ammonia bath at pH 9.5 for 6 hours to establish a continuous protective magnetite (Fe3O4) film before cold hydrostatic testing at 6.3 MPa (1.5x MAWP).
+
+[SEC-THM-5] Low-Water Level Cutoff Interlock (LWCO-01)
+Primary drum level is monitored by differential pressure transmitter DPT-301 and dual independent conductivity probes LWCO-01 and LWCO-02. A drop of drum water level below -75 mm from normal waterline triggers a low-water alarm; dropping below -125 mm initiates an immediate Master Fuel Trip (MFT), closing natural gas double-block-and-bleed valves DBB-1/2 within 1.2 seconds. Never bypass LWCO-01 during live firing; probe blowdown verification must be logged once per shift.

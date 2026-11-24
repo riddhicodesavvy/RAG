@@ -1,0 +1,16 @@
+# STANDARD OPERATING MANUAL: HYDRAULIC PRESS & CIRCUIT MAINTENANCE (DOC-ID: MAN-HYD-101)
+
+[SEC-HYD-1] System Overview & Operating Pressure Envelope
+The Series-4000 Heavy Forming Press operates using ISO VG 46 anti-wear hydraulic oil maintained between 38 C and 54 C during continuous duty cycles. Normal main cylinder working pressure is 21.5 MPa (3,118 psi). System over-pressure protection is governed by the proportional relief valve PRV-402-B, factory-calibrated to crack open at 24.0 MPa and reach full bypass flow at 25.2 MPa. Never adjust the locknut on PRV-402-B without a calibrated Class-0.5 digital pressure gauge connected to test port TP-01.
+
+[SEC-HYD-2] Pump Cavitation Diagnostics & Suction Line Limits
+Pump cavitation manifests as high-pitched metallic knocking above 82 dBA coupled with erratic ram advance speed. Vacuum at suction manifold gauge VG-02 must never exceed 17 kPa (5 inHg) under cold startup or 12 kPa at operating viscosity. Common root causes include clogged 100-mesh suction strainer STR-14, collapsed elastomeric inlet hose HOSE-IN-09, or reservoir oil level dropping below sight-glass mark L-MIN (185 liters). If cavitation persists after strainer replacement, inspect shaft seal ring SSR-22 for air ingress.
+
+[SEC-HYD-3] Proportional Valve Replacement & Flushing Protocol
+Before removing proportional directional valve PDV-118, depressurize accumulator ACC-04 by opening manual bleed needle valve NBV-03 three full turns counterclockwise and confirming zero reading on gauge PG-MAIN. Flush the manifold block using filtered ISO 4406 16/14/11 cleanliness flushing fluid for 25 minutes. Torque the four M10 Grade-12.9 mounting bolts of PDV-118 in a diagonal cross pattern to 68 Nm in two stages: first stage 34 Nm, final stage 68 Nm.
+
+[SEC-HYD-4] Solenoid Coil Diagnostics (SOL-H88)
+Directional pilot solenoid SOL-H88 operates on 24 VDC regulated supply with nominal coil resistance of 22.4 ohms at 20 C. Resistance readings below 18.0 ohms indicate inter-turn shorting, while readings above 30.0 ohms or infinite continuity indicate open winding failure. Minimum pull-in voltage under load is 20.4 VDC. Always verify flyback suppression diode D-41 across terminals A1 and A2 prior to energizing the PLC output card.
+
+[SEC-HYD-5] Emergency Ram Descent & Thermal Shutdown Interlocks
+Thermal switch TS-HIGH triggers an automatic pump motor trip when reservoir bulk temperature reaches 68 C, engaging latching relay K-9. To recover from a thermal trip, allow fluid to cool below 52 C, inspect shell-and-tube heat exchanger HEX-02 water flow rate (minimum 28 liters/min), and press reset button PB-RST-4. During power loss, counterbalance valve CBV-77 locks the upper platen mechanically; manual lowering requires turning override screw OVR-77 clockwise using a 6 mm hex key while maintaining visual clearance.

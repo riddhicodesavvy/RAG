@@ -1,0 +1,16 @@
+# HIGH-VOLTAGE SUBSTATION LOCKOUT / TAGOUT & PPE MANUAL (DOC-ID: MAN-ELE-309)
+
+[SEC-ELE-1] Mandatory Lockout/Tagout Sequence (Procedure LOTO-77X)
+All maintenance on 11 kV switchgear cubicles must follow the seven-step Zero Energy Verification protocol LOTO-77X: (1) notify control desk operator, (2) open downstream load feeders first, (3) rack out main vacuum circuit breaker VCB-11K to TEST/DISCONNECTED position, (4) apply personal padlock LOTO-PAD and red danger tag at mechanical racking shutter, (5) verify line-side dead state using calibrated live-line tester HV-DET-15KV tested before and after use (Live-Dead-Live test), (6) close integral earthing switch ES-11K, and (7) attach portable earthing cluster PEC-04.
+
+[SEC-ELE-2] Arc Flash PPE Categories & Boundary Distances
+Switchgear panel SWG-BUS-A carries an incident energy calculation of 14.8 cal/cm2 at a working distance of 450 mm, placing it in Arc Flash PPE Category 3 (minimum arc rating 25 cal/cm2). Authorized technicians inside the 1.85-meter arc flash boundary must wear multi-layer arc-rated coverall suit AR-25, balaclava hood with Class-2 tinted face shield, leather over-protectors, and hearing protection. Synthetic melting fabrics (polyester, nylon) are strictly prohibited under arc-rated garments.
+
+[SEC-ELE-3] Dielectric Insulating Glove Inspection & Testing (CLASS-2-17KV)
+Rubber insulating gloves designated CLASS-2-17KV are rated for maximum AC working voltage of 17,000 V (tested at 20,000 V proof voltage). Prior to every shift, perform a manual air-inflation roll test to detect micro-pinholes, ozone cracking, or embedded metallic splinters. Dielectric gloves must undergo laboratory electrical re-certification every 6 months per ASTM D120 / IEC 60903; any pair exceeding 180 days from its stamped test date stamped on cuff tag GLV-STAMP must be withdrawn from service immediately.
+
+[SEC-ELE-4] Transformer Dissolved Gas Analysis (DGA) Action Limits
+Oil-immersed 5 MVA step-down transformer TRF-5M undergoes semi-annual DGA sampling via bottom drain valve DV-01. Normal baseline total dissolved combustible gas (TDCG) is below 720 ppm. Acetylene (C2H2) concentrations rising above 35 ppm signify active internal high-energy arcing and mandate immediate off-line diagnostic testing (winding resistance and sweep frequency response analysis SFRA-200) before re-energization. Ethylene (C2H4) > 100 ppm indicates localized thermal overheating above 500 C.
+
+[SEC-ELE-5] Battery Bank & DC Control Bus Maintenance
+Substation 110 VDC trip-coil supply relies on 55 lead-acid VRLA cells (Model VRLA-110-AH) maintained at float charge voltage of 124.85 VDC (+/- 0.5%). Individual cell impedance rising >25% above installation baseline (2.15 mOhm) flags sulfation degradation requiring single-cell capacity discharge testing at C/10 rate (11 A). Technicians must use insulated 1000 V rated torque wrenches set to 14 Nm on inter-cell copper busbars to prevent catastrophic short-circuit faults.

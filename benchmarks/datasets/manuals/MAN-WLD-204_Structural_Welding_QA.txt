@@ -1,0 +1,16 @@
+# STRUCTURAL WELDING QUALITY ASSURANCE SPECIFICATION (DOC-ID: MAN-WLD-204)
+
+[SEC-WLD-1] Base Metal Preparation & Joint Fit-Up Tolerances
+Structural carbon-steel girders conforming to ASTM A572 Grade 50 require bevel angles of 30 degrees (+5/-0 degrees) for single-V groove joints with a root opening of 3.0 mm (+/- 0.8 mm) and a root face of 1.6 mm. All mill scale, grease, paint, and moisture must be removed within 50 mm of the weld toe using power wire brushing or flap-disc grinding prior to tack welding. Tack welds showing cracks must be completely gouged out via carbon-arc gouging before root pass deposition.
+
+[SEC-WLD-2] SMAW Consumable Control & Electrode Baking (E7018-H4R)
+Low-hydrogen electrodes AWS E7018-H4R must remain sealed in hermetically crimped cans until point-of-use issue. Upon opening, electrodes shall be transferred immediately into portable holding ovens maintained between 120 C and 150 C. Any E7018-H4R electrode exposed to ambient workshop humidity (>60% RH) for more than 4.0 hours must be segregated and rebaked once only at 370 C for 2.0 hours. Wet or flaking flux coatings are permanently rejected and discarded into scrap bin BIN-RED-03.
+
+[SEC-WLD-3] Preheat & Interpass Temperature Controls
+For plate thicknesses between 25 mm and 38 mm on ASTM A572 Grade 50 steel, minimum preheat temperature prior to arc strike is 65 C, measured 75 mm laterally from the joint centerline using a calibrated contact thermocouple TC-08 or Tempilstik crayon. For thicknesses exceeding 38 mm, minimum preheat increases to 110 C. Maximum interpass temperature shall not exceed 230 C to preserve heat-affected zone (HAZ) Charpy V-notch impact toughness (minimum 27 J at -20 C).
+
+[SEC-WLD-4] GTAW Root Pass Purge & Shielding Gas Purity
+Stainless steel piping joints (ASTM A312 TP316L) welded via GTAW require internal argon back-purging using Purge Dam Kit PDK-60. Welding shall not commence until oxygen analyzer OA-900 confirms residual O2 concentration inside the pipe bore is below 0.05% (500 ppm). Primary torch shielding uses 99.995% pure Argon flowing at 14 to 18 L/min through a #7 alumina gas lens cup. Exceeding 22 L/min induces turbulent air aspiration and weld bead sugar-oxidation.
+
+[SEC-WLD-5] Ultrasonic Nondestructive Testing (UT-SCAN-9) Acceptance Criteria
+Completed full-penetration butt welds are cooled to ambient temperature (<40 C) and held for 24 hours (hydrogen-delayed cracking incubation period) before ultrasonic inspection per procedure UT-SCAN-9 using a 2.25 MHz, 60-degree shear-wave transducer. Any planar discontinuity exhibiting an amplitude exceeding +6 dB above the reference DAC curve (Class-A reject level), or slag inclusions exceeding 12 mm continuous length, mandates full excavation, re-welding under repair spec WPS-REP-02, and 100% re-inspection.

@@ -1,0 +1,16 @@
+# OVERHEAD BRIDGE CRANE & RIGGING OPERATIONS MANUAL (DOC-ID: MAN-CRN-520)
+
+[SEC-CRN-1] Rated Capacity & Proof Load Testing (SWL-25T)
+Double-girder electric overhead traveling (EOT) crane CRN-BAY3 carries a Safe Working Load (SWL) rating of 25.0 metric tonnes on main hoist MH-01 and 5.0 metric tonnes on auxiliary hoist AH-02. Annual statutory load testing requires lifting a calibrated test weight of 31.25 tonnes (125% SWL overload) 150 mm off the floor and holding for 10 minutes with zero brake creep and maximum girder mid-span deflection below L/800 (22.5 mm for 18-meter span).
+
+[SEC-CRN-2] Wire Rope Inspection & Discard Criteria
+Main hoist MH-01 uses 18 mm diameter 6x36 IWRC galvanized steel wire rope. Immediate rope removal and replacement is mandatory under any of four discard conditions per ISO 4309: (a) 6 or more randomly distributed broken wires in one rope lay length (115 mm), (b) 3 or more broken wires in one strand within one lay, (c) outer wire diameter reduction exceeding 7% (measured below 16.74 mm using a calibrated groove caliper), or (d) any visible kinking, birdcaging, or heat discoloration.
+
+[SEC-CRN-3] Rigging Sling Angle Derating Factors
+When rigging loads with a two-leg wire-rope bridle sling, included horizontal sling angles below 60 degrees drastically amplify leg tension. At a 60-degree angle to the horizontal, load factor is 1.155 (86.6% efficiency). At 45 degrees, tension multiplier rises to 1.414 (70.7% efficiency). Rigging at sling angles below 30 degrees to the horizontal (tension multiplier 2.000) is strictly prohibited without an engineered spreader beam SB-15T approved by the site rigging engineer.
+
+[SEC-CRN-4] Wind Speed Interlocks & Storm Tie-Downs
+For gantry or semi-gantry outdoor bay transfers, anemometer ANEM-01 continuously monitors 3-second gust velocity. When sustained wind speed reaches 15.0 m/s (54 km/h), an amber deck beacon flashes, requiring completion of the current lift within 3 minutes. At 20.0 m/s (72 km/h), crane motion is automatically inhibited and operators must move the bridge to designated storm parking bay SP-01, engage rail clamps RC-A/B, and lower the hook block to 2.0 m above ground without load.
+
+[SEC-CRN-5] Hoist Limit Switches & Anti-Two-Block Testing
+Upper hoist travel is protected by primary rotary cam limit switch HLS-01 (set 450 mm below trolley frame) and secondary weighted counterweight over-hoist switch HLS-02 (set 200 mm below trolley frame). Every shift start requires an unloaded functional bump test of HLS-01 before lifting any payload. Failure of HLS-01 to arrest upward hook travel places crane CRN-BAY3 in mandatory Red-Tag out-of-service lock state until electrical maintenance recalibrates the cam contacts.
